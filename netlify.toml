@@ -1,9 +1,7 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "public"
 
 [build.environment]
   NODE_VERSION = "18"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
